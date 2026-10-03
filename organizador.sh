@@ -1,9 +1,18 @@
 #!/bin/bash
 
+ # Si tiene algún problema con el codigo o recomendaciones, puedes añadir comentarios a mi publicación
+  # de Github para que pueda corregirlo y brindarles un codigo mejorado.
+
+
+	#0 El script te llamara por tu nombre, te saludara y dira cuando se termine el proceso de codigo.
+read name
+
+echo "bienvenido $name, a continuación organizare sus archivos."
+
 	#1 verificación de directorio como argumento.
 
 if [ ! -d "$1" ]; then
-	echo "Error. directorio $1 invalido o  inexistente..."
+	echo "Error $name. directorio $1 invalido o  inexistente..."
 	echo "uso del script: bash organizador.sh /ruta/directorio"
  exit 1
 
@@ -112,7 +121,7 @@ fi
 
 	#7 mensaje de conclusion.
  
-echo "¡Felicidades¡ proceso exitoso <(•w•)>."
+echo "¡Felicidades $name! proceso exitoso <(•w•)>."
 echo "la documentación se ubica en $log_file"
 
 
